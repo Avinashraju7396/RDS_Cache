@@ -5,7 +5,7 @@ import sys
 
 # Redis config
 redis_client = redis.Redis(
-    host='test-oue2fz.serverless.use1.cache.amazonaws.com',
+    host='test-63iddn.serverless.use1.cache.amazonaws.com:6379',         #edit casha end point 
     port=6379,
     ssl=True,  # Set to True for ElastiCache with TLS
     decode_responses=True,
@@ -13,11 +13,11 @@ redis_client = redis.Redis(
 )
 
 # RDS config
-RDS_HOST = 'database-1.cj8oc8ga05ck.us-east-1.rds.amazonaws.com'
+RDS_HOST = 'database-1.c8zywq2ccoms.us-east-1.rds.amazonaws.com'          #edit db end point
 RDS_USER = 'admin'
-RDS_PASSWORD = 'Cloud123'
-RDS_DB_NAME = 'test'
-TABLE_NAME = 'users'
+RDS_PASSWORD = 'avinash1234'                                               #edit password
+RDS_DB_NAME = 'avi'                                                         #edit db name 
+TABLE_NAME = 'users'                                                         # edit db table name
 
 def fetch_data_from_rds():
     try:
